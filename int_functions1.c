@@ -1,4 +1,4 @@
-# "main.h"
+#include "main.h"
 
 /**
 *print_unsigned - prints unsigned integers
@@ -15,7 +15,7 @@ int print_unsigned(va_list types, char buffer[], int flags,
 {
 	int i = BUFF_SIZE - 2;
 
-	unisigned long int num = va_arg(types, unisigned long int
+	unsigned long int num = va_arg(types, unsigned long int
 	);
 	num = convert_size_unsgnd(num, size);
 
@@ -48,9 +48,9 @@ int print_octal(va_list types, char buffer[], int flags,
 {
 	int i = BUFF_SIZE - 2;
 
-	unsigned long int num = va_arg(types, usigned long int);
+	unsigned long int num = va_arg(types, unsigned long int);
 
-	unsigned long int init_num num;
+	unsigned long int init_num = num;
 
 	UNUSED(width);
 

@@ -52,7 +52,7 @@ long int convert_size_number(long int num, int size)
 if (size == S_LONG)
 return (num);
 else if (size == S_SHORT)
-return ((shor)num);
+return ((short)num);
 return ((int)num);
 }
 /**

@@ -13,7 +13,10 @@ int curr_i;
 int width = 0;
 for (curr_i = *i + 1; format[curr_i] != '\0'; curr_i++)
 {
-if (is_digit(format[curr_i] - '0';
+if (is_digit(format[curr_i]))
+{
+width *= 10;
+width += format[curr_i] - '0';
 }
 else if (format[curr_i] == '*')
 {
@@ -24,6 +27,6 @@ break;
 else
 break;
 }
-*i = currr_i - 1;
+*i = curr_i - 1;
 return (width);
 }
