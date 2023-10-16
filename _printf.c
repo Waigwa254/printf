@@ -1,7 +1,7 @@
 #include "main.h"
 
 void print_buffer(char buffer[], int *buff_ind);
-
+int _printf(const char *format, ...);
 /**
  * _printf - its a prints  function
  * *@format: its a format

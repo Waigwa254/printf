@@ -86,7 +86,6 @@ UNUSED(size);
 
 if (str == NULL)
 return (write(1, "(null)", 6));
-
 while (str[i] != '\0')
 {
 if (is_printable(str[i]))
@@ -97,14 +96,10 @@ offset += append_hexa_code(str[i], buffer, i + offset);
 i++;
 }
 
-
 buffer[i + offset] = '\0';
-
 
 return (write(1, buffer, i + offset));
 }
-
-/* PRINT REVERSE */
 
 /**
 *print_reverse - prints string in reverse order
