@@ -31,7 +31,7 @@ int is_digit(char);
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 int get_width(const char *format, int *i, va_list list);
-
+/* SIZES */
 #define S_LONG 2
 #define S_SHORT 1
 /**
@@ -52,7 +52,7 @@ int (*fn)(va_list, char[], int, int, int, int);
  * @fm_t: The function associated.
  */
 typedef struct fmt fmt_t;
-
+/* FLAGS */
 #define F_MINUS 1
 #define F_PLUS 2
 #define F_ZERO 4
