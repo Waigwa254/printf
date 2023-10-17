@@ -26,10 +26,6 @@ This custom printf implementation is a personalized version of the standard `pri
 
 - **Second Contributor**: Contributed to `get-flags.c`, `get_precision.c`, and `int_functions1.c`, enhancing flag extraction, precision determination, and handling for `%i` and `%d` specifiers.
 
-- **12 hours ago**: Updated the `non_printable` handling in `functions.c`, `functions2.c`, and `utils.c`.
-
-- **29 minutes ago**: Made updates to various files for better handling of `%i` and `%d` specifiers.
-
 ## Build and Run
 
 To build the custom printf program, compile the source files and link them into an executable, for example:
